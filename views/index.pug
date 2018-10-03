@@ -1,0 +1,30 @@
+html
+  head
+    style
+      include styles.css
+  body
+    ul
+      each troop in data
+        li(class='troop')
+          div(style="position:absolute; background:white;")
+            p= troop.colors + ' | ' + troop.hexColor
+
+          div
+            img(src=troop.imageUrl width='100%' style='border-radius: 10px 10px 0 0;')
+          div
+            center= troop.name
+
+          div(class='attributes')
+            div
+              img(src='icons/swords-power.svg' height='25' width='25')
+              p= troop.maxAttack
+        
+            
+            div
+              img(src='/icons/shield.svg' height='25' width='25')
+              p= troop.maxArmor
+              
+              
+            div
+              img(src='icons/hearts.svg' height='25' width='25')
+              p=troop.maxLife

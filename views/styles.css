@@ -1,0 +1,38 @@
+body {
+  padding: 20px;
+}
+
+p {
+  margin: 0;
+}
+
+.attributes {
+  width:100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.attributes div {
+  display: inline-block;
+  padding: 0 9px;
+  margin: 0 auto;
+}
+
+
+.troop {
+  margin-right: 20px;
+}
+
+.troop {
+  list-style: none;
+  float:left;
+  height:250px;
+  width:150px;
+  background:#aaa;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+ul {
+  width:100%;
+}
